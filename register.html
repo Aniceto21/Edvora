@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Edvora</title>
+    <link rel="stylesheet" href="edvora.css">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <h1 class="logo-text">Edvora</h1>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="desktop-nav">
+                    <a href="edvora.html#home" class="nav-link">Home</a>
+                    <a href="edvora.html#assessment" class="nav-link">Career Assessment</a>
+                    <a href="edvora.html#careers" class="nav-link">Explore Careers</a>
+                    <a href="edvora.html#resources" class="nav-link">Resources</a>
+                    <a href="edvora.html#about" class="nav-link">About</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="header-cta">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/user.png" alt="User Icon" class="user-icon" />
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="menu-icon" id="menuIcon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="4" x2="20" y1="6" y2="6"/>
+                            <line x1="4" x2="20" y1="12" y2="12"/>
+                            <line x1="4" x2="20" y1="18" y2="18"/>
+                        </svg>
+                    </span>
+                    <span class="close-icon hidden" id="closeIcon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m18 6-12 12"/>
+                            <path d="m6 6 12 12"/>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav hidden" id="mobileNav">
+                <div class="mobile-nav-content">
+                    <a href="edvora.html#home" class="mobile-nav-link">Home</a>
+                    <a href="edvora.html#assessment" class="mobile-nav-link">Career Assessment</a>
+                    <a href="edvora.html#careers" class="mobile-nav-link">Explore Careers</a>
+                    <a href="edvora.html#resources" class="mobile-nav-link">Resources</a>
+                    <a href="edvora.html#about" class="mobile-nav-link">About</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="register-main">
+        <div class="register-container">
+            <div class="register-card">
+                <h2 class="register-title">Create Your Account</h2>
+                <p class="register-subtitle">Join Edvora to explore your career path</p>
+
+                <div id="message" class="message"></div>
+
+                <form id="registerForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="first_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="middleName">Middle Name</label>
+                            <input type="text" id="middleName" name="middle_name">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" name="last_name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password *</label>
+                        <input type="password" id="password" name="password" required minlength="6">
+                        <small>Minimum 6 characters</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password *</label>
+                        <input type="password" id="confirmPassword" name="confirm_password" required>
+                    </div>
+
+                    <button type="submit" class="btn-register">Register</button>
+                </form>
+
+                <p class="login-link">
+                    Already have an account? <a href="login.html">Login here</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script src="edvora_2.js"></script>
+    <script src="register.js"></script>
+</body>
+</html>

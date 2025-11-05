@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Edvora</title>
+    <link rel="stylesheet" href="edvora.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <h1 class="logo-text">Edvora</h1>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="desktop-nav">
+                    <a href="edvora.html#home" class="nav-link">Home</a>
+                    <a href="edvora.html#assessment" class="nav-link">Career Assessment</a>
+                    <a href="edvora.html#careers" class="nav-link">Explore Careers</a>
+                    <a href="edvora.html#resources" class="nav-link">Resources</a>
+                    <a href="edvora.html#about" class="nav-link">About</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="header-cta">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/user.png" alt="User Icon" class="user-icon" />
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="menu-icon" id="menuIcon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="4" x2="20" y1="6" y2="6"/>
+                            <line x1="4" x2="20" y1="12" y2="12"/>
+                            <line x1="4" x2="20" y1="18" y2="18"/>
+                        </svg>
+                    </span>
+                    <span class="close-icon hidden" id="closeIcon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m18 6-12 12"/>
+                            <path d="m6 6 12 12"/>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav hidden" id="mobileNav">
+                <div class="mobile-nav-content">
+                    <a href="edvora.html#home" class="mobile-nav-link">Home</a>
+                    <a href="edvora.html#assessment" class="mobile-nav-link">Career Assessment</a>
+                    <a href="edvora.html#careers" class="mobile-nav-link">Explore Careers</a>
+                    <a href="edvora.html#resources" class="mobile-nav-link">Resources</a>
+                    <a href="edvora.html#about" class="mobile-nav-link">About</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="login-main">
+        <div class="login-container">
+            <div class="login-card">
+                <h2 class="login-title">Welcome Back</h2>
+                <p class="login-subtitle">Login to continue your career journey</p>
+
+                <div id="message" class="message"></div>
+
+                <form id="loginForm" action="login_process.php" method="POST">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+
+                    <button type="submit" class="btn-login">Login</button>
+                </form>
+
+                <p class="register-link">
+                    Don't have an account? <a href="register.html">Register here</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script src="edvora_2.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

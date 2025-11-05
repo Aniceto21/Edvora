@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edvora - Career Guidance Platform</title>
+    <link rel="stylesheet" href="edvora.css">
+    <link rel="stylesheet" href="tech.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <h1 class="logo-text">Edvora</h1>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="desktop-nav">
+                    <a href="edvora.html#home" class="nav-link">Home</a>
+                    <a href="edvora.html#assessment" class="nav-link">Career Assessment</a>
+                    <a href="edvora.html#careers" class="nav-link">Explore Careers</a>
+                    <a href="edvora.html#resources" class="nav-link">Resources</a>
+                    <a href="edvora.html#about" class="nav-link">About</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="header-cta">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/user.png" alt="User Icon" class="user-icon" />
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="menu-icon" id="menuIcon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="4" x2="20" y1="6" y2="6"/>
+                            <line x1="4" x2="20" y1="12" y2="12"/>
+                            <line x1="4" x2="20" y1="18" y2="18"/>
+                        </svg>
+                    </span>
+                    <span class="close-icon hidden" id="closeIcon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m18 6-12 12"/>
+                            <path d="m6 6 12 12"/>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav hidden" id="mobileNav">
+                <div class="mobile-nav-content">
+                    <a href="edvora.html#home" class="mobile-nav-link">Home</a>
+                    <a href="edvora.html#assessment" class="mobile-nav-link">Career Assessment</a>
+                    <a href="edvora.html#careers" class="mobile-nav-link">Explore Careers</a>
+                    <a href="edvora.html#resources" class="mobile-nav-link">Resources</a>
+                    <a href="edvora.html#about" class="mobile-nav-link">About</a>
+                    <div class="mobile-nav-cta">
+                        <button class="btn-primary full-width">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<main>
+<section class="tech-section">
+        <div class="tech-container">
+            <h1 class="tech-main-title">Technical Education Fields in India</h1>
+<div class="tech-grid" id="techGrid"></div>
+</div>
+</section>
+
+<!-- Modal for showing details -->
+<div class="modal" id="detailModal">
+<div class="modal-content">
+<span class="close-btn" id="closeModal">&times;</span>
+<h2 id="modalTitle"></h2>
+<div class="modal-details">
+<div class="detail-item">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+<circle cx="12" cy="10" r="3"/>
+</svg>
+<div>
+<strong>Location:</strong>
+<p id="modalLocation"></p>
+</div>
+</div>
+<div class="detail-item">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<line x1="12" y1="2" x2="12" y2="22"/>
+<path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+</svg>
+<div>
+<strong>Fees:</strong>
+<p id="modalFees"></p>
+</div>
+</div>
+<div class="detail-item">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<circle cx="12" cy="12" r="10"/>
+<polyline points="12,6 12,12 16,14"/>
+</svg>
+<div>
+<strong>Timing:</strong>
+<p id="modalTiming"></p>
+</div>
+</div>
+</div>
+    </div>
+</div>
+</main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Main Footer Content -->
+            <div class="footer-main">
+                <div class="footer-grid">
+                    <!-- Company Info -->
+                    <div class="footer-section">
+                        <h3 class="footer-brand">Edvora</h3>
+                        <p class="footer-description">
+                            Empowering students and professionals to make informed career decisions through comprehensive guidance and resources.
+                        </p>
+                        <div class="social-links">
+                            <button class="social-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                                </svg>
+                            </button>
+                            <button class="social-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                                </svg>
+                            </button>
+                            <button class="social-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                    <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                                </svg>
+                            </button>
+                            <button class="social-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                    <rect x="2" y="9" width="4" height="12"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-section">
+                        <h4 class="footer-heading">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="#assessment" class="footer-link">Career Assessment</a></li>
+                            <li><a href="#careers" class="footer-link">Explore Careers</a></li>
+                            <li><a href="#resources" class="footer-link">Resources</a></li>
+                            <li><a href="#" class="footer-link">Success Stories</a></li>
+                            <li><a href="#" class="footer-link">Career Counseling</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Support -->
+                    <div class="footer-section">
+                        <h4 class="footer-heading">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="#" class="footer-link">Help Center</a></li>
+                            <li><a href="#" class="footer-link">Contact Us</a></li>
+                            <li><a href="#" class="footer-link">FAQs</a></li>
+                            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                            <li><a href="#" class="footer-link">Terms of Service</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="footer-section">
+                        <h4 class="footer-heading">Stay Updated</h4>
+                        <p class="newsletter-description">
+                            Get the latest career insights and opportunities delivered to your inbox.
+                        </p>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Your email" class="newsletter-input" />
+                            <button class="newsletter-btn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"/>
+                                    <polygon points="22,2 15,22 11,13 2,9 22,2"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-separator"></div>
+            <div class="footer-contact">
+                <div class="contact-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    <span>support@edvora.com</span>
+                </div>
+                <div class="contact-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    <span>+1 (555) 123-4567</span>
+                </div>
+                <div class="contact-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    <span>New York, NY</span>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="footer-separator"></div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 Edvora. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#" class="legal-link">Privacy</a>
+                    <a href="#" class="legal-link">Terms</a>
+                    <a href="#" class="legal-link">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="edvora_2.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
